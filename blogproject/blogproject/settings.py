@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # 把英文该文中文
 LANGUAGE_CODE = 'zh-hans'
 # 把国际时区改为中国时区
-TIME_ZONE = '亚洲/上海'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
