@@ -1,0 +1,25 @@
+manage.py 是django为我们生成的管理这些项目的python脚本文件
+1.python manage.py runserver 运行manage.py的runserver命令开启本地开发服务器
+2.python manage.py startapp blog 
+创建一个blog应用，用来存放我们自己所实现的功能代码
+django为生成blog文件夹后，不知道这是一个应用，我们得告诉django这是我们建立的应用
+就是得在django的配置文件中注册这个应用
+## 其他配置项...
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'blog', # 注册 blog 应用
+]
+3.python manage.py shell 进入Python命令交互栏
+4.python manage.py createsuperuser 创建用户
+
+blogproject  存放django的配置文件 列如setting.py，urls.py
+1.setting.py 中修改
+＃把英文改为中文
+LANGUAGE_CODE  =  'zh-hans'
+＃把国际时区改为中国时区
+TIME_ZONE  =  '亚洲/上海'
